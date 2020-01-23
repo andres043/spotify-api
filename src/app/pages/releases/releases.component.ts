@@ -11,7 +11,7 @@ import {ArtistComponent} from '../artist/artist.component';
 })
 export class ReleasesComponent implements OnInit {
 
-  private releases: ReleasesDTO;
+  public releases: ReleasesDTO;
 
   constructor(private releasesService: ReleasesService) { }
 

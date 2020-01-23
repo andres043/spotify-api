@@ -13,9 +13,9 @@ import {TrackDTO} from '../../shared/domain/tackDTO';
 })
 export class ArtistComponent implements OnInit {
 
-  private artistDTO: ArtistDTO;
-  private almbumDTO: AlbumsDTO;
-  private displayedColumns: string[] = ['foto', 'album', 'cancion'];
+  public artistDTO: ArtistDTO;
+  public almbumDTO: AlbumsDTO;
+  public displayedColumns: string[] = ['foto', 'album', 'cancion'];
 
   constructor(private artistService: ArtistService, private router: Router) { }
 

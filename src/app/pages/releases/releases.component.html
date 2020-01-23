@@ -1,0 +1,19 @@
+<div *ngIf="releases != undefined" class="box">
+  <div style="position: relative">
+    <div class="card-container" align="center" *ngFor="let album of releases.albums.items">
+      <mat-card class="card">
+        <img mat-card-image src="{{album.images[0].url}}" alt="{{album.name}}" title="{{album.name}}">
+        <mat-card-content>
+          <div [class.text-container]="album.name.length > 22">
+            <p class="album-title">
+              {{album.name}}
+            </p>
+          </div>
+        </mat-card-content>
+        <div *ngFor="let artist of album.artists">
+          <a mat-raised-button routerLink="/artista/{{artist.id}}" class="button-artist">{{artist.name}}</a>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

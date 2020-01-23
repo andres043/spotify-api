@@ -1,0 +1,37 @@
+html body {
+  margin: 0;
+  color: $font-color;
+  padding: 0;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  font-family: $mat-font-family;
+  background: $body-bg;
+}
+
+.logo {
+  width: 400px;
+  position: relative;
+}
+
+.title {
+  margin: 0;
+  color: $font-color-second;
+  padding: 0;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base-title;
+  line-height: 2.5;
+  font-family: $mat-font-family;
+}
+
+.link{
+  margin: 0;
+  color: $font-color-second;
+  padding: 0;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base-link;
+  line-height: 4.5;
+  font-family: $mat-font-family;
+  text-decoration: none;
+  cursor: pointer;
+}

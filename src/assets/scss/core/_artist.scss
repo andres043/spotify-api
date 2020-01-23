@@ -1,0 +1,36 @@
+.artist-container {
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.name img {
+  border-radius: 50%;
+  border: solid 3px white;
+  float: left;
+}
+
+.name{
+  margin: 0;
+  color: $font-color-second;
+  padding-left: 30px;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base-link;
+  font-family: $mat-font-family;
+  text-decoration: none;
+}
+
+.link-out{
+  padding-left: 30px;
+  font-weight: $font-weight-base;
+  font-family: $mat-font-family;
+  text-decoration: none;
+  color: #536aff;
+}
+
+.header-artist{
+  height: 166px;
+  margin-bottom: 60px;
+}

@@ -1,0 +1,36 @@
+<div class="artist-container">
+  <div class="header-artist" *ngIf="artistDTO != undefined">
+    <a class="name">
+      <img src="{{artistDTO.images[2].url}}" alt="{{artistDTO.name}}" title="{{artistDTO.name}}">
+      {{artistDTO.name}}
+    </a>
+    <br>
+    <a class="link-out" href="{{artistDTO.external_urls.spotify}}">Ir a la página del artista</a>
+  </div>
+  <div *ngIf="almbumDTO != undefined" class="footer">
+    <mat-table [dataSource]="almbumDTO.items" class="mat-elevation-z8">
+      <!-- Position Column -->
+      <ng-container matColumnDef="foto">
+        <mat-header-cell *matHeaderCellDef> Foto </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <img src="{{element.images[2].url}}">
+        </mat-cell>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="album">
+        <mat-header-cell *matHeaderCellDef> Album </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="cancion">
+        <mat-header-cell *matHeaderCellDef> Canción </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.album_group}} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </div>
+</div>

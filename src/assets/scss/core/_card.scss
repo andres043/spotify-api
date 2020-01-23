@@ -81,3 +81,29 @@
 p{
   display: inline;
 }
+
+
+@media(max-width: 1024px) {
+  .card-container {
+    margin-left: 1%;
+  }
+}
+
+@media(max-width: 425px) {
+  .card-container {
+    margin-left: 21%;
+  }
+}
+
+@media(max-width: 375px) {
+  .card-container {
+    margin-left: 17%;
+  }
+}
+
+@media(max-width: 320px) {
+  .card-container {
+      margin-left: 10%;
+  }
+}
+

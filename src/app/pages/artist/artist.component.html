@@ -1,5 +1,6 @@
 <div class="artist-container">
   <div class="header-artist" *ngIf="artistDTO != undefined">
+    <div></div>
     <a class="name">
       <img src="{{artistDTO.images[2].url}}" alt="{{artistDTO.name}}" title="{{artistDTO.name}}">
       {{artistDTO.name}}
@@ -13,7 +14,7 @@
       <ng-container matColumnDef="foto">
         <mat-header-cell *matHeaderCellDef> Foto </mat-header-cell>
         <mat-cell *matCellDef="let element">
-          <img src="{{element.images[2].url}}">
+          <img src="{{element.images[2].url}}" alt="{{element.images[2].url}}" title="{{element.images[2].url}}">
         </mat-cell>
       </ng-container>
 
